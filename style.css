@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #923e5a, #a82060);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player-0 {
+  width: 50%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.player-1 {
+  width: 50%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.player-0,
+.player-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.player-0 h2,
+.player-1 h2 {
+  font-size: 1.6em;
+  color: #161616;
+}
+
+.player-0 h1,
+.player-1 h1 {
+  font-size: 3.3rem;
+  color: #a82060;
+  margin-top: 1rem;
+}
+
+.current-btn {
+  margin-top: 8.5rem;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  outline: none;
+  background-color: #a82060;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: normal;
+}
+.current-btn h2 {
+  font-size: 1.5rem;
+  margin-top: 12px;
+  color: whitesmoke;
+}
+
+#new-game-btn {
+  position: absolute;
+  top: 27%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.224);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#roll-dice-btn {
+  position: absolute;
+  top: 61%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.224);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#hold-btn {
+  position: absolute;
+  top: 68%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.224);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#new-game-btn:hover,
+#roll-dice-btn:hover,
+#hold-btn:hover {
+  background-color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dice {
+  position: absolute;
+  top: 37%;
+  height: 70px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.224);
+  width: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #a82060;
+}
+
+.dice:hover {
+  background-color: #368a79;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner {
+  background-color: rgb(72, 174, 13);
+}
